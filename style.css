@@ -12,6 +12,7 @@ body{
     color: white;
     background-color: black;
     font-size: 1.6rem;
+    overflow-y: hidden;
 }
 
 .wrapper{
@@ -56,4 +57,28 @@ ul{
     display: flex;
     justify-content: space-evenly;
     margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+a:hover:after{
+    width:100%;
+}
+
+    
+a:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0%;
+        height: 2px;
+        opacity: 0.8;
+        margin-top: -0.6em;
+        background: white;
+        transform-origin: center left;
+        transition: width 0.5s;
 }
