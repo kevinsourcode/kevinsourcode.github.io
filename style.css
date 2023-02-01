@@ -43,7 +43,8 @@ a{
 .heading > h2 {
     font-weight: 100;
     margin-top: -2rem;
-    margin-bottom: 4rem;    
+    margin-bottom: 4rem;
+    font-size: 2rem;   
 }
 
 ul{
