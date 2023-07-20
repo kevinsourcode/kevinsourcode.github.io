@@ -9,26 +9,21 @@ html{
 
 }
 
-*{
-    box-sizing: border-box;
-}
 
 body{
-    padding:  5% 0;
+    height: 100vh;
     color: white;
     background-color: black;
     font-size: 1.6rem;
-    overflow-y: hidden;
 }
 
 .wrapper{
-    position: relative;
-    max-width: 60vh;
-    text-align: center;
-    margin: auto;
-    min-height: 100%;
-    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right:35%;
+    top: 35%;
 }
+
 
 a{
     color: antiquewhite;
