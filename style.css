@@ -1,4 +1,9 @@
-html{
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+
+ html{
     font-size: 62.5%;
     font-family: "PT Sans";
     overflow: hidden;
@@ -7,24 +12,28 @@ html{
 @font-face {
     font-family: "PT Sans";
     src: url(./fonts/PT_Sans/PTSans-Regular.ttf);
-
 }
 
+#background-container{
+    z-index: -1;
+    position: absolute;
+}
 
 body{
     height: 100vh;
+    width: 100vw;
     color: white;
     background-color: black;
     font-size: 1.6rem;
 }
 
 .wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
     justify-content: center;
-    position: absolute;
-    right:35%;
-    top: 35%;
+    flex-direction: column;
 }
-
 
 a{
     color: antiquewhite;
@@ -38,26 +47,24 @@ a{
 
 .heading > h2 {
     font-weight: 100;
-    margin-top: -2rem;
     margin-bottom: 4rem;
     font-size: 2rem;   
 }
+
 
 ul{
     list-style: none;
     padding-left: 0;
 }
 
-.projects{
-    margin-bottom: 4rem;
-}
 .social-media{
     padding: 5px;
 }
 
 .social-media > ul{
     display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
+    justify-content: space-between;
     margin: 5px;
 }
 
@@ -71,23 +78,56 @@ a:hover:after{
     width:100%;
 }
 
-    
-a:after {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 0%;
-        height: 2px;
-        opacity: 0.8;
-        margin-top: -0.6em;
-        background: white;
-        transform-origin: center left;
-        transition: width 0.5s;
-}
-
 .heading{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 2px;
+    opacity: 0.8;
+    margin-top: -0.6em;
+    background: white;
+    transform-origin: center left;
+    transition: width 0.5s;
+}
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projects{
+    margin-bottom: 4rem;
+}
+
+
+
+
+
+
+
+
+    
+
+
+ */
