@@ -2,7 +2,7 @@ const PARTICLE_NUM = 500;
 const PARTICLE_BASE_RADIUS = 0.5;
 const FL = 500;
 const DEFAULT_SPEED = 2;
-const BOOST_SPEED = 200;
+const BOOST_SPEED = 75;
 
 let canvas;
 let canvasWidth, canvasHeight;
